@@ -1,0 +1,59 @@
+              MSC: 2
+                          MSC: 4
+          MSC: 5
+                  MSC: 3
+                      MSC: 1
+                          highestNum = 5, nr = 5
+                          I know that 5 is the biggest one! 4
+                          MSC: LOST 4
+          highestNum = 5, nr = 5
+          I know that 5 is the biggest one! 5
+                          nr_leades = 0
+                          There is only one leaders.
+          MSC: LEADER 5
+              highestNum = 5, nr = 5
+              I know that 5 is the biggest one! 2
+          nr_leades = 1
+          There is only one leaders.
+              MSC: LOST 2
+                  highestNum = 5, nr = 5
+              nr_leades = 1
+                  I know that 5 is the biggest one! 3
+              There is only one leaders.
+                  MSC: LOST 3
+                      highestNum = 5, nr = 5
+                  nr_leades = 1
+                  There is only one leaders.
+                      I know that 5 is the biggest one! 1
+                      MSC: LOST 1
+                      nr_leades = 1
+                      There is only one leaders.
+6 processes created
+
+(Spin Version 6.4.7 -- 19 August 2017)
+	+ Partial Order Reduction
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+State-vector 228 byte, depth reached 203, ••• errors: 0 •••
+   232274 states, stored
+   138679 states, matched
+   370953 transitions (= stored+matched)
+     4338 atomic steps
+hash conflicts:       432 (resolved)
+Stats on memory usage (in Megabytes):
+   56.708	equivalent memory usage for states (stored*(State-vector + overhead))
+   44.053	actual memory usage for states (compression: 77.68%)
+         	state-vector as stored = 171 byte + 28 byte overhead
+  128.000	memory used for hash table (-w24)
+    0.107	memory used for DFS stack (-m2000)
+  172.052	total actual memory usage
+unreached in proctype nnode
+	dkrlea_1.pml:36, state 10, "nr_leaders = (nr_leaders+1)"
+	(1 of 58 states)
+unreached in init
+	(0 of 47 states)
+pan: elapsed time 0.54 seconds
+pan: rate 430137.04 states/second

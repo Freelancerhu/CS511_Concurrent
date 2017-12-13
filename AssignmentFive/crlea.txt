@@ -1,0 +1,85 @@
+      Initilizing 0
+      Initilizing 1
+      Initilizing 2
+      Initilizing 3
+      Initilizing 4
+                          4 received: 0 electe
+                      3 received: 4 electe
+          0 received: 1 electe
+          0 is sending {electe 1} to 4
+              1 received: 2 electe
+                  2 received: 3 electe
+                      3 is sending {electe 4} to 2
+              1 is sending {electe 2} to 0
+                          4 received: 1 electe
+                  2 is sending {electe 3} to 1
+              1 received: 3 electe
+          0 received: 2 electe
+          0 is sending {electe 2} to 4
+              1 is sending {electe 3} to 0
+                  2 received: 4 electe
+                  2 is sending {electe 4} to 1
+                          4 received: 2 electe
+              1 received: 4 electe
+              1 is sending {electe 4} to 0
+          0 received: 3 electe
+          0 is sending {electe 3} to 4
+                          4 received: 3 electe
+          0 received: 4 electe
+          0 is sending {electe 4} to 4
+                          4 received: 4 electe
+                          find leader, 4 send to the ring
+                      3 received: 4 is leader
+                      MSC: LOST
+                  2 received: 4 is leader
+                  MSC: LOST
+              1 received: 4 is leader
+              MSC: LOST
+          0 received: 4 is leader
+          MSC: LOST
+                          4 received: 4 is leader
+                          MSC: LEADER4
+      timeout
+#processes: 6
+		queue 1 (ch[0]):
+		queue 2 (ch[1]):
+		queue 3 (ch[2]):
+		queue 4 (ch[3]):
+		queue 5 (ch[4]):
+180:	proc  5 (nnode:1) crlea.pml:14 (state 23)
+180:	proc  4 (nnode:1) crlea.pml:14 (state 23)
+180:	proc  3 (nnode:1) crlea.pml:14 (state 23)
+180:	proc  2 (nnode:1) crlea.pml:14 (state 23)
+180:	proc  1 (nnode:1) crlea.pml:14 (state 23)
+180:	proc  0 (:init::1) crlea.pml:55 (state 14) <valid end state>
+6 processes created
+
+
+
+(Spin Version 6.4.7 -- 19 August 2017)
+	+ Partial Order Reduction
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+State-vector 228 byte, depth reached 203, ••• errors: 0 •••
+   232274 states, stored
+   138679 states, matched
+   370953 transitions (= stored+matched)
+     4338 atomic steps
+hash conflicts:       432 (resolved)
+Stats on memory usage (in Megabytes):
+   56.708	equivalent memory usage for states (stored*(State-vector + overhead))
+   44.053	actual memory usage for states (compression: 77.68%)
+         	state-vector as stored = 171 byte + 28 byte overhead
+  128.000	memory used for hash table (-w24)
+    0.107	memory used for DFS stack (-m2000)
+  172.052	total actual memory usage
+unreached in proctype nnode
+	dkrlea_1.pml:36, state 10, "nr_leaders = (nr_leaders+1)"
+	(1 of 58 states)
+unreached in init
+	(0 of 47 states)
+pan: elapsed time 0.53 seconds
+pan: rate 438252.83 states/second
